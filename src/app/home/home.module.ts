@@ -5,6 +5,7 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from '@app/home/home.component';
 import { SearchComponent } from './search/search.component';
 import { PaginationComponent } from './pagination/pagination.component';
+import { ResultsContentComponent } from './results-content/results-content.component';
 
 
 
@@ -13,6 +14,7 @@ import { PaginationComponent } from './pagination/pagination.component';
     HomeComponent,
     SearchComponent,
     PaginationComponent,
+    ResultsContentComponent,
   ],
   imports: [
     CommonModule,
