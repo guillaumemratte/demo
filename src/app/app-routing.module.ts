@@ -5,7 +5,7 @@ import { HomeComponent } from './home/home.component';
 const routes: Routes = [
   {
     path: 'home',
-    component: HomeComponent
+    loadChildren: './home/home.module#HomeModule'
   },
   {
     path: '',
