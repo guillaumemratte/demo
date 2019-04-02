@@ -6,7 +6,7 @@
       "@app/*": ["app/*"],
       "@env/*": ["environments/*"],
       "@shared/*": ["app/shared/*"],
-      "@states/*": ["app/states/*"]
+      "@state/*": ["app/state/*"]
     },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
