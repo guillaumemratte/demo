@@ -5,7 +5,8 @@
 export const environment = {
   production: false,
   api : {
-    endpoint: 'https://api.efood.real.de/api/v2/real',
+    baseUrl: 'https://api.efood.real.de',
+    endpoint: '/api/v2/real',
     paths: {
       getProducts: '/products/search'
     }

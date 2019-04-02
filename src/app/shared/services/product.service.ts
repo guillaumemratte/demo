@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import {Observable} from 'rxjs';
-import {SearchQueryParam} from '@models/search.interface';
+import { QueryParam } from '@models/search.interface';
 import { environment } from '@env/environment';
 
 @Injectable({
@@ -14,10 +14,10 @@ export class ProductService {
   ) { }
 
   getProducts(query: string): Observable<any> {
-    return this.http.get(`${environment.api.endpoint}${environment.api.paths.getProducts}`);
+    return this.http.get(`${environment.api.baseUrl}${environment.api.endpoint}${environment.api.paths.getProducts}`);
   }
 
-  private formatQuery(queryParams: SearchQueryParam): string {
+  private formatQuery(queryParams: QueryParam): string {
     return '';
   }
 }
