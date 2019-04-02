@@ -1,21 +1,25 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 import {
   MatButtonModule,
+  MatFormFieldModule,
   MatPaginatorModule
 } from '@angular/material';
 
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule,
+    TranslateModule,
     MatButtonModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatFormFieldModule
   ],
   exports: [
+    TranslateModule,
     MatButtonModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatFormFieldModule
   ]
 })
 export class SharedModule { }
