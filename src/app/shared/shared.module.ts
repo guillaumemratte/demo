@@ -4,7 +4,8 @@ import { TranslateModule } from '@ngx-translate/core';
 import {
   MatButtonModule,
   MatFormFieldModule,
-  MatPaginatorModule
+  MatPaginatorModule,
+  MatInputModule
 } from '@angular/material';
 
 @NgModule({
@@ -13,13 +14,15 @@ import {
     TranslateModule,
     MatButtonModule,
     MatPaginatorModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatInputModule
   ],
   exports: [
     TranslateModule,
     MatButtonModule,
     MatPaginatorModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatInputModule
   ]
 })
 export class SharedModule { }
