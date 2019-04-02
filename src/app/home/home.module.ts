@@ -4,6 +4,7 @@ import { SharedModule } from '@shared/shared.module';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from '@app/home/home.component';
 import { SearchComponent } from './search/search.component';
+import { PaginationComponent } from './pagination/pagination.component';
 
 
 
@@ -11,6 +12,7 @@ import { SearchComponent } from './search/search.component';
   declarations: [
     HomeComponent,
     SearchComponent,
+    PaginationComponent,
   ],
   imports: [
     CommonModule,

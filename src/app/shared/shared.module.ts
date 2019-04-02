@@ -8,8 +8,12 @@ import {
   MatInputModule
 } from '@angular/material';
 
+import { HeaderComponent } from './components/header/header.component';
+
 @NgModule({
-  declarations: [],
+  declarations: [
+    HeaderComponent
+  ],
   imports: [
     TranslateModule,
     MatButtonModule,
@@ -22,7 +26,8 @@ import {
     MatButtonModule,
     MatPaginatorModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    HeaderComponent
   ]
 })
 export class SharedModule { }

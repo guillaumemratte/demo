@@ -1,3 +1,6 @@
 {
-  "TITLE": "Meine demo app"
+  "TITLE": "Meine demo app",
+  "SEARCH": {
+    "PLACEHOLDER": "Search"
+  }
 }
