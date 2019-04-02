@@ -1,7 +1,7 @@
 import { Action } from '@ngrx/store';
 
 export enum SearchActionsTypes {
-  GetData = '[User] Get Data',
+  GetData = '[Search] Get Data',
 }
 
 export class GetData implements Action {

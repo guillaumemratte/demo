@@ -3,7 +3,13 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  api : {
+    endpoint: 'https://api.efood.real.de/api/v2/real',
+    paths: {
+      getProducts: '/products/search'
+    }
+  }
 };
 
 /*

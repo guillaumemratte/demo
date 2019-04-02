@@ -1,7 +1,7 @@
-import { initialSearchState, SearchQueryState } from '@store/states/search.state';
+import { initialSearchState, SearchState } from '@store/states/search.state';
 
 export interface AppState {
-  search: SearchQueryState;
+  search: SearchState;
 }
 
 export const initialAppState: AppState = {

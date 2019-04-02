@@ -1,9 +1,15 @@
-import { Search } from '@models/search.interface';
+import {QueryParam, SearchParams, sortingTypes} from '@models/search.interface';
 
-export interface SearchQueryState {
-  params: Search;
+export interface SearchState {
+  searchParams: SearchParams;
+  queryParams: QueryParam;
 }
 
-export const initialSearchState: SearchQueryState = {
-  params: null,
+export const initialSearchState: SearchState = {
+  searchParams: null,
+  queryParams: {
+    term: '',
+    sorting: sortingTypes.RELEVANCE,
+    category: 1,
+  },
 };
