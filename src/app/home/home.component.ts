@@ -19,10 +19,10 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.store.select('search').subscribe((data: SearchState) => {
+    /*this.store.select('search').subscribe((data: SearchState) => {
       console.log(data);
-    } );
-    //this.store.dispatch(new GetData());
+    } );*/
+    this.store.dispatch(new GetData());
   }
 
 }

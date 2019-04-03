@@ -6,7 +6,7 @@ export enum sortingTypes {
   NAME_DESC= 'name-desc',
 }
 
-export interface SearchParams {
+export interface HttpSearchParams {
   query: string;
   currentPage: number;
   pageSize: number;

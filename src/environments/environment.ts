@@ -5,6 +5,7 @@
 export const environment = {
   production: false,
   api : {
+    proxy: 'http://localhost:3000',
     baseUrl: 'https://api.efood.real.de',
     endpoint: '/api/v2/real',
     paths: {

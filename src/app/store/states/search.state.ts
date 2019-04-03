@@ -1,12 +1,16 @@
-import {QueryParam, SearchParams, sortingTypes} from '@models/search.interface';
+import {QueryParam, HttpSearchParams, sortingTypes} from '@models/search.interface';
 
 export interface SearchState {
-  searchParams: SearchParams;
+  httpSearchParams: HttpSearchParams;
   queryParams: QueryParam;
 }
 
 export const initialSearchState: SearchState = {
-  searchParams: null,
+  httpSearchParams: {
+    query: '',
+    currentPage: 0,
+    pageSize: 20,
+  },
   queryParams: {
     term: '',
     sorting: sortingTypes.RELEVANCE,
