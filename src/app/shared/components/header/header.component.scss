@@ -4,9 +4,11 @@ nav {
   background: $primary;
   display: flex;
   align-items: center;
+  height: 60px;
 
   h1 {
     color: $text-color-pale;
+    margin: 0;
   }
 }
 

@@ -5,6 +5,12 @@
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 
 
-.app-container {
+body {
+  width: 100vw;
+  height: 100vh;
+}
 
+.app-container {
+  box-sizing: border-box;
+  height: 100%;
 }
