@@ -14,23 +14,18 @@ export class ProductService {
   ) { }
 
   getProducts(params: HttpSearchParams): Observable<any> {
-    const httpParams = new HttpParams();
     const httpHeaders = new HttpHeaders(
       {
         Accept: 'application/json',
-        'Access-Control-Allow-Origin': '*'
+        'Access-Control-Allow-Origin': '*',
+        'access-control-allow-credentials': 'true'
       }
     );
-
-    httpParams.append('query', params.query);
-    httpParams.append('currentPage', params.currentPage.toString());
-    httpParams.append('pageSize', params.pageSize.toString());
 
     return this.http.get(
       `${environment.api.proxy}${environment.api.endpoint}${environment.api.paths.getProducts}?currentPage=0&pageSize=10&query`,
       {
-        headers: httpHeaders,
-        params: httpParams
+        headers: httpHeaders
       }
     );
   }

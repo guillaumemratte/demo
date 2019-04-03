@@ -5,7 +5,8 @@ import {
   MatButtonModule,
   MatFormFieldModule,
   MatPaginatorModule,
-  MatInputModule
+  MatInputModule,
+  MatProgressSpinnerModule
 } from '@angular/material';
 
 import { HeaderComponent } from './components/header/header.component';
@@ -19,13 +20,15 @@ import { HeaderComponent } from './components/header/header.component';
     MatButtonModule,
     MatPaginatorModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatProgressSpinnerModule
   ],
   exports: [
     TranslateModule,
     MatButtonModule,
     MatPaginatorModule,
     MatFormFieldModule,
+    MatProgressSpinnerModule,
     MatInputModule,
     HeaderComponent
   ]

@@ -1,0 +1,14 @@
+@import '../../../../sass/variables';
+
+nav {
+  background: $primary;
+  display: flex;
+  align-items: center;
+
+  h1 {
+    color: $text-color-pale;
+  }
+}
+
+
+
